@@ -48,8 +48,7 @@
         .delivery,
         .time,
         .ingredients {
-            position: relative;
-            // padding: 10px;
+            position: relative; // padding: 10px;
         }
         .delivery {
             padding-right: 40px;
@@ -74,7 +73,8 @@
                 margin-left: -63px;
                 margin-top: 6px;
             }
-        }.ingredients {
+        }
+        .ingredients {
             padding-left: 20px;
             &:before {
                 content: '';
@@ -84,6 +84,88 @@
                 position: absolute;
                 margin-left: -63px;
                 margin-top: 6px;
+            }
+        }
+    }
+}
+
+.menu {
+    &.catalog-menu {
+        .menu-row {
+            .menu-item {
+                text-align: center;
+                height: 350px;
+                transition: 0.4s all ease;
+                &.item1 {
+                    background: url('../img/item1.png');
+                }
+                &.item2 {
+                    background: url('../img/item2.png');
+                }
+                &.item3 {
+                    background: url('../img/item3.png');
+                }
+                &.item4 {
+                    background: url('../img/item4.png');
+                }
+                &.item5 {
+                    background: url('../img/item2.png');
+                }
+                &.item6 {
+                    background: url('../img/item6.png');
+                }
+                &.item7 {
+                    background: url('../img/item7.png');
+                }
+                &.item8 {
+                    background: url('../img/item8.png');
+                }
+                &.item9 {
+                    background: url('../img/item9.png');
+                }
+                &.item10 {
+                    background: url('../img/item10.png');
+                }
+                &.item11 {
+                    background: url('../img/item11.png');
+                }
+                &.item12 {
+                    background: url('../img/item12.png');
+                }
+                &:hover {
+                    .menu-item-inner {
+                        border-color: #fff;
+                    }
+                }
+                .menu-item-inner {
+                    border: 1px solid transparent;
+                    margin: 25px 15px;
+                    padding: 15px;
+                    height: 350px - 25px - 25px;
+                    position: relative;
+                    h4,
+                    a {
+                        color: #fff;
+                        font-family: 'Open Sans';
+                    }
+                    h4 {
+                        margin-top: 80px;
+                        font-size: 2.3rem;
+                    }
+                    .menu-link{
+                        position: absolute;
+                        bottom: 10px;
+                        text-align: center;
+                        margin: 0 auto;
+                        width: 100%;
+                        a{
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+
+                    }
+                }
             }
         }
     }
