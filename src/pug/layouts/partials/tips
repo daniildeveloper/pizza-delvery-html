@@ -1,0 +1,24 @@
+.menu
+    .left
+        .helpers
+            .menu-item
+                select#city(name="city")
+                    option(value="kazan") г. Казань
+            .menu-item.time с 10.00 до 22.00
+            .menu-item.phone
+                a(href="tel: +77718521479") +7(771) 852-14-79
+        nav.nav
+            ul
+                li
+                    a(href="#") меню
+                li
+                    a(href="#") доставка
+                li
+                    a(href="#") отзывы
+                li
+                    a(href="#") гарантия качества
+                li
+                    a(href="#") блог
+                li
+                    a(href="#") контакты
+    .right
