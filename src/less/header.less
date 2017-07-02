@@ -1,0 +1,81 @@
+body {
+    overflow-x: hidden;
+}
+
+.header {
+    // index page menu
+    nav.navbar.navbar-default.index-page {
+        background: @black;
+        ul.nav {
+            &.menu {
+                padding-left: 20px;
+                li {
+                    a {
+                        padding-bottom: 15px;
+                        border-bottom: 4px solid @black;
+                        &:hover {
+                            border-bottom: 4px solid @red;
+                        }
+                        
+                    }
+                }
+            }
+            li {
+                // &:selected,
+                &.dropdown {
+                    &.open {
+                        a {
+                            background: @black;
+                            border-bottom: @red;
+                        }
+                    }
+                    ul {
+                        background: @black;
+                        a {
+                            background: @black;
+                            &:hover {
+                                color: @red;
+                            }
+                        }
+                    }
+                    span.caret {
+                        margin-left: 5px;
+                        color: @gray;
+                    }
+                }
+                a {
+                    color: #fff;
+                    padding: 20px 10px;
+                    font-size: 1rem;
+                    text-transform: uppercase; // font-weight: bold;
+                }
+                &.time {
+                    padding-left: 20px;
+                    &:before {
+                        content: '';
+                        background: url(../img/clock.png) no-repeat;
+                        width: 25px;
+                        height: 25px;
+                        position: absolute;
+                        margin-left: -15px;
+                        margin-top: 19px;
+                    }
+                }
+                &.phone {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    border-right: 1px solid @gray;
+                    &:before {
+                        content: '';
+                        background: url(../img/phone.png) no-repeat;
+                        width: 25px;
+                        height: 25px;
+                        position: absolute;
+                        margin-left: -15px;
+                        margin-top: 19px;
+                    }
+                }
+            }
+        } // index page menu
+    }
+}
