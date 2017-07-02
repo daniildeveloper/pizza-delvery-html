@@ -41,3 +41,50 @@
         }
     }
 }
+
+.props {
+    padding: 70px 50px;
+    .row {
+        .delivery,
+        .time,
+        .ingredients {
+            position: relative;
+            // padding: 10px;
+        }
+        .delivery {
+            padding-right: 40px;
+            &:before {
+                content: '';
+                background: url(../img/delivery-truck.png) no-repeat;
+                width: 80px;
+                height: 55px;
+                position: absolute;
+                margin-left: -83px;
+                margin-top: 6px;
+            }
+        }
+        .time {
+            padding-left: 20px;
+            &:before {
+                content: '';
+                background: url(../img/stopwatch.png) no-repeat;
+                width: 80px;
+                height: 65px;
+                position: absolute;
+                margin-left: -63px;
+                margin-top: 6px;
+            }
+        }.ingredients {
+            padding-left: 20px;
+            &:before {
+                content: '';
+                background: url(../img/salmon.png) no-repeat;
+                width: 80px;
+                height: 55px;
+                position: absolute;
+                margin-left: -63px;
+                margin-top: 6px;
+            }
+        }
+    }
+}
