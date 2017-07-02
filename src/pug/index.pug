@@ -3,7 +3,32 @@ extends layouts/index-page-template.pug
 block page-title
   | Главная
 
-//- block content
-//-   main
+block content
+  main
+    //- hero banner
+    .hero-banner.text-center
+      img.logo(src="img/logo.png")
+      h1.text-uppercase Доставка японской кухни
+      p Японская кухня приготовленная
+      p в лучших традициях
+      a.btn.btn-danger
+        p Открыть меню
+    //- end hero banner
+
+    //- props
+    .props.container
+      .row
+        .col-md-4.delivery
+          h3.text-uppercase Бесплатная доставка
+          .text Закажите на 500 рублей и доставка будет бесплатной
+        .col-md-4.time
+          h3.text-uppercase Доставка за час
+          .text Доставим ваш заказ в течении 1 часа по Казани
+        .col-md-4.ingredients
+          h3.text-uppercase Свежие ингредиенты
+          .text Мы готовим наши блюда исключительно их свежих продуктов
+    //- end props
+    
+      
     
 
