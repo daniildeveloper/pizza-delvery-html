@@ -16,7 +16,6 @@ body {
                         &:hover {
                             border-bottom: 4px solid @red;
                         }
-                        
                     }
                 }
             }
@@ -68,6 +67,33 @@ body {
                     &:before {
                         content: '';
                         background: url(../img/phone.png) no-repeat;
+                        width: 25px;
+                        height: 25px;
+                        position: absolute;
+                        margin-left: -15px;
+                        margin-top: 19px;
+                    }
+                }
+                &.login {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    border-right: 1px solid @gray;
+                    &:before {
+                        content: '';
+                        background: url(../img/login.png) no-repeat;
+                        width: 25px;
+                        height: 25px;
+                        position: absolute;
+                        margin-left: -15px;
+                        margin-top: 19px;
+                    }
+                }
+                &.cart {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    &:before {
+                        content: '';
+                        background: url(../img/cart.png) no-repeat;
                         width: 25px;
                         height: 25px;
                         position: absolute;
