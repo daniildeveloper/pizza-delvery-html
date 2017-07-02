@@ -21,6 +21,7 @@ body {
             }
             li {
                 // &:selected,
+                transition: 1s all ease;
                 &.dropdown {
                     &.open {
                         a {
@@ -43,6 +44,7 @@ body {
                     }
                 }
                 a {
+                    transition: 0.5s all ease;
                     color: #fff;
                     padding: 20px 10px;
                     font-size: 1rem;
@@ -89,11 +91,11 @@ body {
                     }
                 }
                 &.cart {
-                    padding-left: 20px;
+                    padding-left: 30px;
                     padding-right: 20px;
                     &:before {
                         content: '';
-                        background: url(../img/cart.png) no-repeat;
+                        background: url(../img/shopping-basket.png) no-repeat;
                         width: 25px;
                         height: 25px;
                         position: absolute;
