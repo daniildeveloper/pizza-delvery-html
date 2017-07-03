@@ -1,23 +1,68 @@
 .catalog {
-    margin-top: 3rem;
-    position: relative;
+    // position: relative;
     .filter-row {
-        position: relative; // display: flex;
-        // flex-direction: row;
-        // flex-wrap: wrap;
-        // align-content: center;
-        // align-items: center;
-        // justify-content: space-between;
+        padding-top: 1rem; // position: relative;
+        .right,
+        .left {
+            margin: 0 15px;
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        .left {
+            .popular,
+            .news {
+                padding: 10px 25px;
+            }
+            .popular {
+                background: @red;
+                color: #fff;
+                padding-left: 35px;
+                border-radius: 25px;
+                p {
+                    position: relative; // font-size: 1.1rem;
+                    &:before {
+                        content: '';
+                        background: url('../img/star.png') no-repeat;
+                        width: 40px;
+                        height: 40px;
+                        right: 60px;
+                        top: -3px;
+                        position: absolute;
+                    }
+                }
+            }
+            .news{
+                &:before{
+                    content: '+';
+                    color: #fff;
+                    background: @green;
+                    padding: 7px 10px;
+                    border-radius: 50%;
+                    margin-right: 5px;
+                    
+                }
+            }
+        }
+        .right {
+            background: @yellow;
+            padding: 15px; // margin-right: -45px;
+            p {
+                // font-weight: bold;
+                font-family: 'Open Sans';
+                font-size: 14px;
+            }
+        }
     }
     .catalog-items {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-content: stretch;
-        align-items: baseline; // text-align: center;
+        align-items: stretch; // text-align: center;
         .catalog-item {
             transition: 0.3s all ease-in-out;
-            width: 18%;
+            width: 205px;
             padding: 15px;
             border: 1px solid @gray-light;
             margin: 10px;
@@ -50,8 +95,7 @@
                 font-size: 13px;
             }
             p.price {
-                color: @gray;
-                // TODO:font-family
+                color: @gray; // TODO:font-family
                 // font-family: Open Sans;
             }
             .cart-price {
@@ -60,14 +104,15 @@
                 padding-top: 10px;
                 display: flex;
                 flex-direction: row;
+                flex-wrap: wrap;
                 justify-content: space-between; // margin-top: 2rem;
                 a.btn.btn-danger {
                     background: @red;
-                    padding: 5px 20px;
+                    padding: 5px 17px;
                     font-family: 'Open Sans';
                     border-radius: 2px;
                 }
-                div.price{
+                div.price {
                     font-weight: bold;
                     font-size: 1.5rem;
                 }

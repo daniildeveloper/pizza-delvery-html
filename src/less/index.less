@@ -49,6 +49,7 @@
         .time,
         .ingredients {
             position: relative; // padding: 10px;
+            margin-bottom: 2rem;
         }
         .delivery {
             padding-right: 40px;
@@ -90,7 +91,8 @@
 }
 
 div.menu {
-    margin-bottom: 1rem;
+    // margin-bottom: 1rem;
+    height: auto;
     &.catalog-menu {
         .menu-row {
             .menu-item {
@@ -135,7 +137,7 @@ div.menu {
                 }
                 &:hover {
                     .menu-item-inner {
-                        border-color: #fff;
+                        border-color: #fff !important;
                     }
                 }
                 .menu-item-inner {
@@ -144,6 +146,7 @@ div.menu {
                     padding: 15px;
                     height: 350px - 25px - 25px;
                     position: relative;
+                    z-index: 999;
                     h4,
                     a {
                         color: #fff;
@@ -153,7 +156,9 @@ div.menu {
                         margin-top: 80px;
                         font-size: 2.3rem;
                     }
-                    
+                    &:hover {
+                        border-color: #fff !important;
+                    }
                     .menu-link {
                         position: absolute;
                         bottom: 10px;
