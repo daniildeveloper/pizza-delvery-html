@@ -177,7 +177,7 @@ div.menu {
     }
 }
 
-.btn.btn-action{
+.btn.btn-action {
     position: relative;
     color: @red;
     border: 1px solid @red;
@@ -186,8 +186,74 @@ div.menu {
     text-align: center;
     padding: 7px 25px;
     font-size: 16px;
-    &:hover{
+    &:hover {
         color: #fff;
         background: @red;
+    }
+}
+
+.otzyvu-wrapper {
+    background: @lime;
+    opacity: 0.8;
+    .otzyvu {
+        padding: 3rem;
+        background: url('../img/green-background.png') no-repeat;
+    }
+    h3 {
+        color: #fff;
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .slider {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        @media screen and (max-width: 768px) {
+            flex-wrap: wrap;
+        }
+        .otzyv-container {
+            .otzyv {
+                .box-shadow;
+                background: #fff;
+                position: relative;
+                margin: 1rem 2.5rem;
+                border-radius: 20px;
+                padding: 30px;
+                &::before {
+                    content: '';
+                    width: 75px;
+                    height: 75px;
+                    position: absolute;
+                    margin-left: -100px;
+                    background: url('../img/girl.png') no-repeat;
+                    top: 0;
+                }
+                .rating {
+                    padding-left: 15px;
+                    i {
+                        color: @yellow-dark;
+                    }
+                }
+            }
+            .author {
+                padding-left: 45px;
+                p {
+                    color: #fff;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+    .see-all-wrapper {
+        margin-top: 2rem;
+        .see-all {
+            .box-shadow;
+            padding: 7px 15px;
+            color: @green-text;
+            background: #fff;
+            font-size: 1.1rem;
+            border-radius: 5px;
+        }
     }
 }
