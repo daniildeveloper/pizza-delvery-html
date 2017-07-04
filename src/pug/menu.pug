@@ -1,0 +1,51 @@
+extends layouts/layout.pug
+
+block page-title
+    | Меню
+
+block content
+    .container-fluid
+        .row
+            .col-sm-1
+                img(src="img/logo.png", alt="", style="width: 80px").logo
+            .col-sm-11
+                .categories
+                    .category
+                        a.category-link(href="#") Суши
+                    .category
+                        a.category-link(href="#") роллы
+                    .category
+                        a.category-link(href="#") салаты
+                    .category
+                        a.category-link(href="#") горячее
+                    .category
+                        a.category-link(href="#") асорти
+                    .category
+                        a.category-link(href="#") самими
+                    .category
+                        a.category-link(href="#") сладкие роллы
+                    .category
+                        a.category-link(href="#") пицца
+                    .category
+                        a.category-link(href="#") вок лапша
+                    .category
+                        a.category-link(href="#") детское Меню
+                    .category
+                        a.category-link(href="#") десерты
+                    .category
+                        a.category-link(href="#") напитки
+                .menu-category-header
+                    div.menu-category-title
+                        h1 Роллы
+                    div.menu-category-promo
+                        .promo-container
+                            | с 11ч по 17ч - 
+                            span скидка 40%
+                    div.sort
+                        | Сортировка по:
+    //- todo remove from partials/catalog.pug row with categories
+    //- todo: edit single item cart
+    include partials/catalog.pug
+
+    //- answers
+    include partials/answers.pug
