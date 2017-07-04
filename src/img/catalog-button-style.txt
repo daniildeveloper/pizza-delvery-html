@@ -1,0 +1,5 @@
+/* Style for "Rectangle" */
+width: 270px;
+height: 50px;
+border-radius: 4px;
+background-image: linear-gradient(225deg, #ffc800 0%, #ff5700 100%);
