@@ -42,7 +42,19 @@ block content
                             | с 11ч по 17ч - 
                             span скидка 40%
                     div.sort
-                        | Сортировка по:
+                        div Сортировка:
+                        .dropdown
+                            button.dropdown-toggle(type='button', data-toggle='dropdown')
+                                | Популярные
+                                span.caret
+                            ul.dropdown-menu
+                                li
+                                a(href='#') HTML
+                                li
+                                a(href='#') CSS
+                                li
+                                a(href='#') JavaScript
+
     //- todo remove from partials/catalog.pug row with categories
     //- todo: edit single item cart
     include partials/catalog-menu.pug

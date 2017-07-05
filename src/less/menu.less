@@ -51,10 +51,10 @@
                 position: absolute;
                 top: 22px;
             }
-            &::before{
+            &::before {
                 left: 15px;
             }
-            &::after{
+            &::after {
                 right: 15px;
             }
             .promo-container {
@@ -68,6 +68,41 @@
                     font-weight: bold;
                     text-transform: uppercase;
                     font-family: 'Open Sans';
+                }
+            }
+        }
+        .sort {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+            div {
+                padding: 0 3px;
+            }
+            .dropdown {
+                button {
+                    background: #fff;
+                    border: 1px solid @gray-border;
+                    text-transform: uppercase;
+                    padding: 5px 20px;
+                    position: relative;
+                    &::before{
+                        content: '';
+                        width: 30px;
+                        height: 30px;
+                        position: absolute;
+                        background: url('../img/flame-copy.png') no-repeat;
+                        left: 0;
+                        margin-left: 10px;
+                    }
+                    span{
+                        position: absolute;
+                        right: 2px;
+                        top: 14px;
+                        color: @gray;
+                        // font-size: 4rem;
+                    }
                 }
             }
         }
