@@ -17,17 +17,27 @@
                 }
             }
             a {
+                .transition;
                 padding: 15px 10px;
                 text-transform: uppercase;
                 font-size: 1.2rem;
                 color: @black;
                 font-weight: bold;
                 border-bottom: 5px solid #fff;
+                
                 &:hover {
                     color: @red;
                     border-bottom-color: @red;
                 }
             }
         }
+    }
+    .menu-category-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 20px;
+        padding-left: 5px;
     }
 }

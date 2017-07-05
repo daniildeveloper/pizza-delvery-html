@@ -1,0 +1,54 @@
+.catalog-menu {
+    // margin: 0 auto;
+    .catalog-items {
+        
+        // margin: 0 auto;
+        margin: 1rem auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-around;
+        align-items: stretch; // text-align: center;
+        .catalog-item {
+            transition: 0.3s all ease-in-out;
+            min-width: 225px;
+            padding: 15px;
+            border: 1px solid @gray-light;
+            margin: 10px;
+            position: relative;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &:hover {
+                transform: scale(1.03);
+            }
+            h4 {
+                font-size: 1rem;
+                text-transform: uppercase;
+            }
+            img {
+                text-align: center;
+                margin: 0 auto;
+                width: 80%;
+            }
+            .count {
+                position: absolute;
+                top: 4px;
+                right: 10px;
+                background: url('../img/star.png') no-repeat;
+                width: 28px;
+                height: 28px;
+                padding: 6px 5px 0 8px;
+                font-weight: bold;
+                font-size: 13px;
+            }
+            p.price {
+                color: @gray; // TODO:font-family
+                // font-family: Open Sans;
+            }
+            
+        }
+    }
+}

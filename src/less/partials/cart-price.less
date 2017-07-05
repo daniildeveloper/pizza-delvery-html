@@ -1,0 +1,47 @@
+.cart-price {
+    // position: absolute;
+    bottom: 5px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; // margin-top: 2rem;
+    a.btn.btn-danger {
+        background: @red;
+        padding: 5px 17px;
+        font-family: 'Open Sans';
+        border-radius: 2px;
+        // display: none;
+    }
+    div.price {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    .in-cart-count {
+        display: none !important;
+        background: @green-success;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        padding: 1px;
+        border-radius: 1px;
+        input {
+            width: 50px;
+            height: 30px;
+            text-align: center;
+            border: none;
+            outline: none;
+            border-radius: 2px;
+            font-family: 'PFD';
+        }
+        .minus,
+        .plus {
+            padding: 1px 13px;
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
+    }
+}
