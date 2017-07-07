@@ -70,6 +70,8 @@ gulp.task('default', ['images-to-dist', 'fonts-prepare', "bootstrap-prepare", 'l
 gulp.task('js-prepare', function () {
   gulp.src('./src/js/**/*')
     .pipe(gulp.dest('./dist/js/'));
+  gulp.src('./vendors/bootstrap-table/dist/bootstrap-table.min.js')
+    .pipe(gulp.dest('./dist/js/'));
 })
 
 //all images from sources to production
@@ -114,7 +116,7 @@ gulp.task("bootstrap-prepare", function () {
   gulp.src("./vendors/jquery/dist/jquery.min.js").pipe(gulp.dest("./dist/js"));
   gulp.src("./vendors/tether/dist/css/tether.min.css").pipe(gulp.dest("./dist/css"));
   gulp.src("./vendors/tether/dist/js/tether.min.js")
-  .pipe(gulp.dest("./dist/js"))
+    .pipe(gulp.dest("./dist/js"))
 
 });
 
@@ -175,4 +177,6 @@ gulp.task('ext', function () {
 gulp.task("css", function () {
   gulp.src("./node_modules/bootstrap/dist/css/bootstrap.min.css")
     .pipe(gulp.dest('./dist/css/'));
+  gulp.src('./vendors/bootstrap-table/dist/bootstrap-table.min.css')
+    .pipe('./dist/css/');
 });
