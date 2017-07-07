@@ -67,18 +67,19 @@ block content
             h3.text-uppercase.light сет "Популярный"
             p.count 890гр./16 шт
             p.short-description Лосось, угорь, авокадо, сыр Филадельфия, кляр, сухари
-            div  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias velit aperiam expedita omnis quas eaque similique beatae, enim molestiae praesentium aut consequatur, commodi voluptate corporis nostrum. Beatae, totam pariatur ex.
+            div.description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias velit aperiam expedita omnis quas eaque similique beatae, enim molestiae praesentium aut consequatur, commodi voluptate corporis nostrum. Beatae, totam pariatur ex.
             br
-            div.price-and-cart
-                div 1770.-
-                a.btn.btn-danger(href="") В корзину
+            div.price-and-cart.container.row
+                div.col-sm-1.price 1770.-
+                .col-sm-1
+                    a.btn.btn-danger(href="#") В корзину
             .row
                 .col-sm-4.props
-                    div Бесплатная доставка от 500р
+                    div.delivery Бесплатная доставка от 500р
                 .col-sm-4.props
-                    div Доставка не дольше полутора часов
+                    div.delivery-time Доставка не дольше полутора часов
                 .col-sm-4.props
-                    div Исключительно свежие ингридиенты
+                    div.ingredients Исключительно свежие ингридиенты
     
     .usually-byed
         .container-fluid

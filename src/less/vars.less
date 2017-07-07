@@ -13,6 +13,7 @@
 @yellow-dark: #FFD000;
 @blue-dark: #26323F;
 @green-success: #7ED321;
+@gray-font: #8391A0;
 
 /**
 * mixins
@@ -28,10 +29,23 @@
 
 a.btn.btn-danger {
     background: @red;
+    border: none;
     padding: 5px 17px;
     font-family: 'Open Sans';
     border-radius: 2px;
+    &:hover {
+        background: @btn-yellow;
+    }
 }
-.light{
+
+.light {
     font-family: 'PFD Light';
+}
+
+.museo {
+    font-family: 'Museo';
+}
+
+.gray-font {
+    color: @gray-font;
 }
