@@ -1,0 +1,132 @@
+extends layouts/layout.pug
+
+block page-title
+    | Ролл
+
+block content
+    .container-fluid.menu-header
+        .row
+            .col-sm-1
+                img(src="img/logo.png", alt="", style="width: 80px").logo
+            .col-sm-11
+                .categories
+                    .category
+                        a.category-link(href="#") Суши
+                    .category
+                        a.category-link(href="#") роллы
+                    .category
+                        a.category-link(href="#") салаты
+                    .category
+                        a.category-link(href="#") горячее
+                    .category
+                        a.category-link(href="#") ассорти
+                    .category
+                        a.category-link(href="#") самими
+                    .category
+                        a.category-link(href="#") сладкие роллы
+                    .category
+                        a.category-link(href="#") пицца
+                    .category
+                        a.category-link(href="#") вок лапша
+                    .category
+                        a.category-link(href="#") детское Меню
+                    .category
+                        a.category-link(href="#") десерты
+                    .category
+                        a.category-link(href="#") напитки
+                .menu-category-header
+                    div.menu-category-title
+                        h1 Роллы
+                    div.menu-category-promo
+                        .promo-container
+                            | с 11ч по 17ч - 
+                            span скидка 40%
+                    div.sort
+                        div Сортировка:
+                        .dropdown
+                            button.dropdown-toggle(type='button', data-toggle='dropdown')
+                                | Популярные
+                                span.caret
+                            ul.dropdown-menu
+                                li
+                                    a(href='#') HTML
+                                li
+                                    a(href='#') CSS
+                                li
+                                    a(href='#') JavaScript
+
+    //- todo remove from partials/catalog.pug row with categories
+
+    //- single product item preview
+    .container.single-item
+        .row
+         .col-md-4
+            img(src="img/s1.png", alt="")
+         
+         .col-md-8
+            h3.text-uppercase сет "Популярный"
+            p.count 890гр./16 шт
+            p.short-description Лосось, угорь, авокадо, сыр Филадельфия, кляр, сухари
+            div  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias velit aperiam expedita omnis quas eaque similique beatae, enim molestiae praesentium aut consequatur, commodi voluptate corporis nostrum. Beatae, totam pariatur ex.
+            br
+            div.price-and-cart
+                div 1770.-
+                a.btn.btn-danger(href="") В корзину
+            .row
+                .col-sm-4.props
+                    div Бесплатная доставка от 500р
+                .col-sm-4.props
+                    div Доставка не дольше полутора часов
+                .col-sm-4.props
+                    div Исключительно свежие ингридиенты
+    
+    .usually-byed
+        .container-fluid
+            h3.text-uppercase Чаще всего берут:
+        .catalog-menu.container-fluid
+            .catalog-items
+                .catalog-item
+                    img(src="img/s1.png", alt="")
+                    h4 Сет
+                    .count 9
+                    p.price 890гр. / 16 шт.
+                    .cart-price
+                        .price 1770.-
+                        a.btn.btn-danger(href="single.html") В корзину
+                        .in-cart-count
+                            div.minus -
+                            input(type="number", value="1")
+                            div.plus +
+                .catalog-item
+                    img(src="img/s2.png", alt="")
+                    h4 Сет
+                    .count 9
+                    p.price 890гр. / 16 шт.
+                    .cart-price
+                        .price 1770.-
+                        a.btn.btn-danger(href="") В корзину
+                .catalog-item
+                    img(src="img/s3.png", alt="")
+                    h4 Сет
+                    .count 9
+                    p.price 890гр. / 16 шт.
+                    .cart-price
+                        .price 1770.-
+                        a.btn.btn-danger(href="") В корзину
+                .catalog-item
+                    img(src="img/s4.png", alt="")
+                    h4 Сет
+                    .count 9
+                    p.price 890гр. / 16 шт.
+                    .cart-price
+                        .price 1770.-
+                        a.btn.btn-danger(href="") В корзину
+                .catalog-item
+                    img(src="img/s5.png", alt="")
+                    h4 Сет
+                    .count 9
+                    p.price 890гр. / 16 шт.
+                    .cart-price
+                        .price 1770.-
+                        a.btn.btn-danger(href="") В корзину
+    include partials/answers.pug
