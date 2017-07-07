@@ -1,5 +1,7 @@
 .menu-header {
     padding: 5px 15px;
+    padding-bottom: 0;
+    margin-bottom: 2rem;
     .categories {
         margin-top: 1rem;
         display: flex;
@@ -8,8 +10,9 @@
         align-items: baseline;
         align-content: flex-start;
         justify-content: space-between;
+        border-bottom: 1px solid @gray-light;
         .category {
-            margin-bottom: 1.4rem;
+            margin-bottom: 1rem;
             &:last-child {
                 a {
                     margin-right: 15px;
@@ -22,7 +25,7 @@
                 font-size: 1.2rem;
                 color: @black;
                 font-weight: bold;
-                border-bottom: 5px solid #fff;
+                border-bottom: 4px solid #fff;
                 &:hover {
                     color: @red;
                     border-bottom-color: @red;
@@ -37,6 +40,13 @@
         align-items: center;
         padding-right: 20px;
         padding-left: 5px;
+        .menu-category-title{
+            h1{
+                .light;
+                font-size: 3rem;
+            }
+        }
+
         .menu-category-promo {
             padding: 10px 25px;
             position: relative;
